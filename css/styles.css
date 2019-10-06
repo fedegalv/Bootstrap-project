@@ -1,6 +1,7 @@
 #title{
   background-color: #ff4c68;
   color: #fff;
+  /* position: absolute; */
 }
 /* Navigation Bar */
 .navbar{
@@ -23,7 +24,7 @@ body{
   font-family: "Montserrat";
 }
 .container-fluid{
-   padding: 3% 15%;
+   padding: 3% 15% 7%;
 }
  h1{
    /* font-family: "Montserrat-black"; */
@@ -54,10 +55,11 @@ body{
 /* PICTURES */
 .phone-picture{
   transform: rotate(25deg);
-  width: 40%;
-  max-width: 400px;
+  width: 60%;
+   max-width: 400px;
   height: auto;
   margin: 0 auto;
+  position: absolute;
 }
 .phone-column{
   text-align: center;
@@ -67,13 +69,16 @@ body{
   #features{
     text-align: center;
     padding: 5%;
+    background-color: #FFFFFF;
+    position: relative;
+    /* bottom: 100px; */
+
   }
   .feature-tittle{
     font-family: "Montserrat";
     font-weight: bold;
     font-size:  1.5rem;
-    margin-top: 20px;
-
+    margin-top: 30px;
   }
     /* ICONS */
     .feature-icon{
@@ -112,4 +117,54 @@ body{
  /* PRICES AND SERVICES */
 #pricing{
   text-align: center;
+  padding: 100px;
+}
+
+.btn{
+}
+.pricing-column{
+  padding: 3% 2%;
+}
+
+@media (max-width: 1020px) {
+
+  .phone-picture{
+    transform: rotate(0);
+    position: static;
+    width: 50%;
+  }
+  #title{
+    text-align: center;
+  }
+  .buttons{
+    display: block;
+  }
+}
+
+/* CALL TO ACTION */
+#cta{
+  background-color: #ff4c68;
+  text-align: center;
+}
+.cta-title{
+  margin: 40px 40px;
+  line-height: 1.5;
+  font-family: "Montserrat";
+  font-size: 3rem;
+  font-weight:bold;
+  color: #ffff;
+}
+
+/* FOOTER */
+#footer{
+  text-align: center;
+  background-color: #ffff;
+  margin: 70px 50px;
+}
+.footer-icon{
+margin-right: 15px;
+}
+.copyright-text{
+  margin-top: 20px;
+  font-size: 90%;
 }
